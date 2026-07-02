@@ -417,6 +417,54 @@ section{ padding:110px 0; }
 .org-row{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
 .org-row .org-node{ background:var(--paper); color:var(--ink-text); border:1px solid var(--line); }
 
+/* ==========================================================================
+   Organograma de setor (fluxograma) — usado nas páginas de setor
+   ========================================================================== */
+.org-flow{ display:flex; flex-direction:column; align-items:center; }
+.flow-connector{ width:1px; height:34px; background:var(--line-dark); }
+.on-alt .flow-connector, .on-deep .flow-connector{ background:var(--line); }
+
+.flow-row{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; }
+
+.flow-node{
+  background:var(--cream); border-radius:14px; padding:18px 24px;
+  min-width:210px; max-width:260px; text-align:center;
+  border:1px solid transparent;
+  transition:transform .25s var(--ease);
+}
+.flow-node:hover{ transform:translateY(-4px); }
+.flow-node .role{
+  display:block; font-size:.66rem; font-weight:800; letter-spacing:.1em;
+  text-transform:uppercase; margin-bottom:8px;
+}
+.flow-node .name{ font-family:var(--serif); font-style:italic; font-size:1.15rem; color:var(--ink-text); line-height:1.25; }
+.flow-node .area{ font-size:.8rem; color:var(--muted); margin-top:6px; }
+
+.flow-node.tier-geral{ background:var(--ink); border-color:var(--amber); }
+.flow-node.tier-geral .role{ color:var(--amber); }
+.flow-node.tier-geral .name{ color:var(--cream); }
+.flow-node.tier-geral .area{ color:var(--muted-inv); }
+
+.flow-node.tier-setor{ border-color:var(--coral); }
+.flow-node.tier-setor .role{ color:var(--coral); }
+
+.flow-node.tier-colab{ min-width:180px; padding:16px 20px; }
+.flow-node.tier-colab .role{ color:var(--green-deep); }
+
+.flow-legend{
+  display:flex; gap:22px; flex-wrap:wrap; justify-content:center; margin-top:44px;
+  font-size:.78rem; color:var(--muted-inv);
+}
+.flow-legend span{ display:flex; align-items:center; gap:8px; }
+.flow-legend i{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+.flow-legend .dot-geral{ background:var(--amber); }
+.flow-legend .dot-setor{ background:var(--coral); }
+.flow-legend .dot-colab{ background:var(--green); }
+
+@media (max-width:640px){
+  .flow-node{ min-width:0; width:100%; max-width:320px; }
+}
+
 /* Quote / testimonial */
 .quote-block{
   display:grid; grid-template-columns:auto 1fr; gap:30px; align-items:flex-start;
