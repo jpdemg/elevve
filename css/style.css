@@ -416,6 +416,7 @@ section{ padding:110px 0; }
 .org-line{ width:1px; height:26px; background:var(--line); }
 .org-row{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
 .org-row .org-node{ background:var(--paper); color:var(--ink-text); border:1px solid var(--line); }
+.org-node-geral{ background:var(--amber) !important; color:var(--ink) !important; border-color:var(--amber) !important; }
 
 /* ==========================================================================
    Organograma de setor (fluxograma) — usado nas páginas de setor
