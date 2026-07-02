@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Elevve</title>
+<meta name="description" content="Fale com a equipe da Elevve, consultoria júnior de jovens aprendizes do programa ESPRO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <a href="index.html" class="logo">Elevve<span class="arrow">↗</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link" data-page="index.html">Início</a></li>
+        <li><a href="sobre.html" class="nav-link" data-page="sobre.html">Sobre</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Setores</a>
+          <div class="dropdown">
+            <a href="setores/rh.html"><span class="tag">01</span> Recursos Humanos</a>
+            <a href="setores/mkt.html"><span class="tag">02</span> Marketing</a>
+            <a href="setores/adm.html"><span class="tag">03</span> Administrativo</a>
+            <a href="setores/prod.html"><span class="tag">04</span> Produção</a>
+            <a href="setores/ti.html"><span class="tag">05</span> Tecnologia</a>
+          </div>
+        </li>
+        <li><a href="projetos.html" class="nav-link" data-page="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="nav-link is-active" data-page="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="contato.html" class="btn btn-dark">
+        Fale com a gente
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:50px;">
+    <div class="container">
+      <span class="breadcrumb"><a href="index.html">Início</a><span class="sep">/</span><span class="current">Contato</span></span>
+      <h1>Vamos conversar sobre <em>o seu próximo passo?</em></h1>
+      <p class="lede">Seja para tirar dúvidas sobre a Elevve, propor uma parceria ou saber mais sobre um dos nossos projetos, é só preencher o formulário abaixo.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="setor">Setor de interesse</label>
+            <select id="setor" name="setor">
+              <option value="geral">Assunto geral</option>
+              <option value="rh">Recursos Humanos</option>
+              <option value="mkt">Marketing</option>
+              <option value="adm">Administrativo</option>
+              <option value="prod">Produção</option>
+              <option value="ti">Tecnologia</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o motivo do contato..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Enviar mensagem
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </button>
+          <p class="form-note">Este é um formulário de demonstração — projeto acadêmico do programa ESPRO. Nenhuma mensagem é enviada de fato.</p>
+          <div class="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+            Mensagem enviada com sucesso! A equipe da Elevve retornará em breve.
+          </div>
+        </form>
+      </div>
+
+      <div data-reveal>
+        <div class="info-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></span>
+          <div>
+            <h4>E-mail</h4>
+            <p>contato@elevve.com.br</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div>
+            <h4>Unidade</h4>
+            <p>Programa ESPRO — turma de gestão empresarial</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <div>
+            <h4>Atendimento</h4>
+            <p>Segunda a sexta, das 8h às 17h</p>
+          </div>
+        </div>
+
+        <div style="margin-top:30px;">
+          <h4 style="font-family:var(--sans); font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:14px;">Redes sociais</h4>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 13v4"/></svg></a>
+            <a href="#" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 6h20v12H2z"/><path d="M2 6l10 7L22 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Elevve<span class="arrow">↗</span></a>
+        <p>Consultoria júnior formada por jovens aprendizes do programa ESPRO, preparando a próxima geração para o mercado de trabalho.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Setores</h5>
+        <ul>
+          <li><a href="setores/rh.html">Recursos Humanos</a></li>
+          <li><a href="setores/mkt.html">Marketing</a></li>
+          <li><a href="setores/adm.html">Administrativo</a></li>
+          <li><a href="setores/prod.html">Produção</a></li>
+          <li><a href="setores/ti.html">Tecnologia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="sobre.html">Sobre a Elevve</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="mailto:contato@elevve.com.br">contato@elevve.com.br</a></li>
+          <li><a href="#">@elevve.consultoria</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Elevve Consultoria Júnior — Projeto acadêmico ESPRO.</span>
+      <span>Feito pelo setor de TI.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
