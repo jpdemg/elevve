@@ -1,28 +1,29 @@
 /* ==========================================================================
    Elevve — Design System
    Conceito: "Editorial de Ascensão" — tipografia serifada expressiva sobre
-   papel quente, contrastada com seções em tinta escura. Setas e números
-   grandes reforçam a ideia de elevação/crescimento profissional.
+   fundo claro e frio, contrastada com seções em Twilight escuro. Setas e
+   números grandes reforçam a ideia de elevação/crescimento profissional.
+   Paleta: Eucalypt / Twilight / Pacific / Polar Sky / Plum.
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
 :root{
-  --ink:#10140f;
-  --ink-soft:#242b21;
-  --paper:#f7f2e7;
-  --paper-alt:#efe6d2;
-  --paper-deep:#e7dcc1;
-  --line:#d9cdaa;
-  --line-dark:rgba(247,242,231,.16);
-  --green:#1fa968;
-  --green-deep:#146b44;
-  --coral:#ff6a45;
-  --amber:#e8a53d;
-  --cream:#f6f1e4;
-  --ink-text:#181d14;
-  --muted:#5c5a4a;
-  --muted-inv:#c9c6b6;
+  --ink:#384466;          /* Twilight — fundo escuro / superfícies principais */
+  --ink-soft:#3a6a6b;     /* Eucalypt — texto sobre badges claros */
+  --paper:#eff5f6;        /* neutro quase branco, com leve tinta de Polar Sky */
+  --paper-alt:#e3edee;
+  --paper-deep:#cfe0e3;
+  --line:#c3d6d9;
+  --line-dark:rgba(239,245,246,.16);
+  --green:#498496;        /* Pacific — acento primário / CTAs */
+  --green-deep:#3a6a6b;   /* Eucalypt — hover do acento primário */
+  --coral:#5a3c62;        /* Plum — acento editorial (serifas, números) */
+  --amber:#89b7c2;        /* Polar Sky — acento claro sobre fundo escuro */
+  --cream:#eff5f6;
+  --ink-text:#242c3f;
+  --muted:#5c6478;
+  --muted-inv:#b9c3d6;
 
   --serif:'Fraunces', ui-serif, Georgia, serif;
   --sans:'Archivo', ui-sans-serif, system-ui, sans-serif;
@@ -167,7 +168,7 @@ p{ margin:0; }
 .btn-primary:hover{ background:var(--green-deep); }
 
 .btn-dark{ background:var(--ink); color:var(--cream); }
-.btn-dark:hover{ background:#000; }
+.btn-dark:hover{ background:#242c3f; }
 
 .btn-outline{ border-color:var(--ink); color:var(--ink-text); }
 .btn-outline:hover{ background:var(--ink); color:var(--cream); }
@@ -337,11 +338,11 @@ section{ padding:110px 0; }
 .project-card .foot svg{ width:14px; height:14px; }
 
 /* thumb color variants per sector */
-.thumb-rh{ background:linear-gradient(135deg,#1fa968,#146b44); }
-.thumb-mkt{ background:linear-gradient(135deg,#ff6a45,#c94a2a); }
-.thumb-adm{ background:linear-gradient(135deg,#2a3b52,#10140f); }
-.thumb-prod{ background:linear-gradient(135deg,#e8a53d,#b5771f); }
-.thumb-ti{ background:linear-gradient(135deg,#146b44,#10140f); }
+.thumb-rh{ background:linear-gradient(135deg,#498496,#3a6a6b); }
+.thumb-mkt{ background:linear-gradient(135deg,#5a3c62,#3d2942); }
+.thumb-adm{ background:linear-gradient(135deg,#384466,#242c3f); }
+.thumb-prod{ background:linear-gradient(135deg,#89b7c2,#498496); }
+.thumb-ti{ background:linear-gradient(135deg,#3a6a6b,#384466); }
 
 /* ==========================================================================
    Filters (Projetos page)
