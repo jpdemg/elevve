@@ -345,6 +345,78 @@ section{ padding:110px 0; }
 .thumb-ti{ background:linear-gradient(135deg,#3a6a6b,#384466); }
 
 /* ==========================================================================
+   Projeto LinkedIn — cronograma e temas por setor
+   ========================================================================== */
+.schedule-strip{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.schedule-day{
+  border:1px solid var(--line); border-radius:var(--radius); padding:26px;
+  background:var(--paper);
+}
+.on-dark .schedule-day{ background:rgba(255,255,255,.04); border-color:var(--line-dark); }
+.schedule-day .day-date{
+  font-family:var(--serif); font-style:italic; font-size:1.6rem; color:var(--coral);
+  display:block; margin-bottom:4px;
+}
+.schedule-day .day-label{ font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+.on-dark .schedule-day .day-label{ color:var(--muted-inv); }
+.schedule-day .day-sectors{ margin-top:18px; display:flex; flex-direction:column; gap:10px; }
+.schedule-day .day-sectors span{
+  display:inline-flex; align-items:center; gap:8px; font-size:.85rem; font-weight:700;
+}
+.schedule-day .day-sectors i{ width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+
+.theme-grid{ display:flex; flex-direction:column; gap:20px; }
+.theme-card{
+  border:1px solid var(--line); border-radius:var(--radius); padding:34px;
+  display:grid; grid-template-columns:.85fr 1.15fr; gap:36px;
+  background:var(--paper);
+}
+.theme-card .theme-head{ display:flex; flex-direction:column; gap:14px; }
+.theme-card .theme-badge{
+  display:inline-flex; align-items:center; gap:8px; font-size:.7rem; font-weight:800;
+  letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:99px;
+  color:var(--cream); width:fit-content;
+}
+.theme-card .theme-num{ font-family:var(--serif); font-style:italic; color:var(--coral); font-size:1rem; }
+.theme-card h3{ font-size:1.6rem; line-height:1.1; }
+.theme-card .theme-meta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; }
+.theme-card .tag-abordagem{
+  font-size:.72rem; font-weight:700; padding:6px 12px; border-radius:99px;
+  border:1px solid var(--line); color:var(--muted);
+}
+.theme-card .tag-data{
+  font-size:.72rem; font-weight:700; padding:6px 12px; border-radius:99px;
+  background:var(--paper-deep); color:var(--ink-text);
+}
+.topic-list{ display:flex; flex-direction:column; gap:0; }
+.topic-list li{
+  display:flex; align-items:baseline; gap:10px; padding:12px 0;
+  border-top:1px solid var(--line); font-size:.92rem;
+}
+.topic-list li:first-child{ border-top:none; }
+.topic-list li.is-principal{ font-weight:700; }
+.star{ color:var(--coral); }
+.topic-list li .star{ flex-shrink:0; }
+
+.theme-badge.badge-rh{ background:#498496; }
+.theme-badge.badge-adm{ background:#384466; }
+.theme-badge.badge-ti{ background:#3a6a6b; }
+.theme-badge.badge-prod{ background:#89b7c2; color:var(--ink-text); }
+.theme-badge.badge-mkt{ background:#5a3c62; }
+
+.legend-star{
+  display:inline-flex; align-items:center; gap:10px; font-size:.85rem; color:var(--muted);
+  border:1px dashed var(--line); border-radius:99px; padding:10px 20px;
+}
+.on-dark .legend-star{ color:var(--muted-inv); border-color:var(--line-dark); }
+.legend-star .star{ color:var(--coral); }
+
+@media (max-width:860px){
+  .schedule-strip{ grid-template-columns:1fr; }
+  .theme-card{ grid-template-columns:1fr; }
+}
+
+/* ==========================================================================
    Filters (Projetos page)
    ========================================================================== */
 .filters{ display:flex; gap:10px; flex-wrap:wrap; }
